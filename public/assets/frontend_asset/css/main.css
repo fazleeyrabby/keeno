@@ -1,0 +1,77 @@
+body{
+margin: 0px;
+padding: 0px;
+}
+.header{
+height: 630px;
+background-color: #F5F5F5;
+padding-top: 25px;
+}
+.search{
+margin-left: -75px;
+}
+.menu-bar{
+margin-left:auto; 
+}
+.menu-bar ul li {
+float: left;
+color: black;
+text-align: center;
+padding: 10px;
+text-decoration: none;
+font-size: 17px;
+list-style: none;
+}
+.shopping-card{
+margin: -14px 0 0 11px;
+background-color: #6551FF;
+color: white;
+}
+.tagline{
+text-align: center;
+padding-top: 80px;
+font-size: 3.5em; 
+}
+.feature-product-title{
+text-align: center;
+font-size: 2em; 
+margin-top: 70px;
+}
+.hr{
+width:34%;
+height:1px;
+border-width:0;
+color:gray;
+background-color:#6551FF;
+margin-left:33% !important;
+margin-right:25% !important;
+}
+.fooetr-hr{
+width:34%;
+height:1px;
+border-width:0;
+color:gray;
+background-color:#6551FF;
+margin-left:0% !important;
+margin-right:25% !important;
+}
+.hr2{
+width:100%;
+height:1px;
+border-width:0;
+color:gray;
+background-color:#6551FF;
+}
+.shop-now{
+justify-content: center;
+margin: 20px;
+}
+.details{
+background-color:#6551FF;
+}
+.card-body{
+justify-content: center;
+}
+.carousel{
+margin-top: -55px;
+}
