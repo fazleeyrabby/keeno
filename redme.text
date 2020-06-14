@@ -1,0 +1,2 @@
+Run Project: command->php artisan serve
+URL->http://127.0.0.1:8000/

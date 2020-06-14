@@ -31,10 +31,10 @@
       <hr class="hr" />
       <!-- Card -->
       <?php 
-            $categories = App\Categories::orderBy('id','DESC')->limit(3)->get();
-      ?>
+         $categories = App\Categories::orderBy('id','DESC')->limit(3)->get();
+         ?>
       <div class="row">
-           @foreach($categories as $categorie)
+         @foreach($categories as $categorie)
          <div class="col-md-4">
             <div class="card" >
                <img class="card-img-top" src="{{ $categorie->image_url }}" alt="Card image" style="width:100%" height="100px">
@@ -76,10 +76,10 @@
          <!--First slide-->
          <?php 
             $products = App\Products::join('categories', 'products.category_id', '=', 'categories.id')->take(2)->get();
-         ?>
+            ?>
          <div class="carousel-item active">
             <div class="row">
-                @foreach($products as $product)
+               @foreach($products as $product)
                <div class="col-md-6">
                   <div class="card mb-2">
                      <img height="250px" class="card-img-top" src="{{ $product->images_url }}"
@@ -97,10 +97,10 @@
          <!--Second slide-->
          <?php 
             $products = App\Products::join('categories', 'products.category_id', '=', 'categories.id')->skip(2)->take(2)->get();
-         ?>
+            ?>
          <div class="carousel-item">
             <div class="row">
-                 @foreach($products as $product)
+               @foreach($products as $product)
                <div class="col-md-6">
                   <div class="card mb-2">
                      <img height="250px" class="card-img-top" src="{{ $product->images_url }}"
@@ -141,12 +141,12 @@
    <div class="row">
       <?php 
          $products = App\Products::join('categories', 'products.category_id', '=', 'categories.id')->inRandomOrder()->limit(1)->get();
-      ?>
+         ?>
       @foreach($products as $product)
       <div class="col-md-4">
          <div class="card" >
             <img class="card-img-top" src="{{ $product->images_url }}" alt="Card image" style="width:100%" height="400px">
-             <div class="card-body" align="">
+            <div class="card-body" align="">
                <h6 class="card-title">{{ substr($product->name,0,10) }}</h6>
                <p class="card-text">$ {!! $product->price !!}
                </p>
@@ -156,7 +156,7 @@
       @endforeach
       <?php 
          $products = App\Products::join('categories', 'products.category_id', '=', 'categories.id')->skip(5)->limit(2)->get();
-      ?>
+         ?>
       @foreach($products as $product)
       <div class="col-md-4" align="" >
          <div class="card" >

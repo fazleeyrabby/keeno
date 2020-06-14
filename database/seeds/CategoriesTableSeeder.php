@@ -11,10 +11,6 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-    	// \App\Categories::create([
-    	// 	'name' => 'Samsang',
-    	// 	'images_url' => 'lena.bmp'
-    	// ]);
     	factory(\App\Categories::class, 4)->create();
     }
 }

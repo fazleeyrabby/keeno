@@ -44,6 +44,5 @@ $factory->define(Categories::class, function (Faker $faker) {
     return [
         'name' => $faker->realText(32),
         'image_url' => $faker->imageUrl(),   
-        // 'image_url' => url("/images/{$faker->image('public/',640,480, null, false)}") 
     ];
 });
